@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.item_weather.view.*
 class WeatherAdapter(private val dataSet: ArrayList<Weather7Day>) : RecyclerView.Adapter<WeatherAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tv_day: TextView = itemView.findViewById(R.id.tv_ngay_thang)
-        val imageWeather: ImageView = itemView.findViewById(R.id.img_weather)
+        val tvDay: TextView = itemView.findViewById(R.id.tvDate)
+        val imageWeather: ImageView = itemView.findViewById(R.id.imgWeather)
 
     }
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -24,10 +24,10 @@ class WeatherAdapter(private val dataSet: ArrayList<Weather7Day>) : RecyclerView
     }
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val weather7Day = dataSet[position]
-        viewHolder.tv_day.text = weather7Day.valid_date
-        viewHolder.itemView.tv_thai_trang.text = weather7Day.weather.description
-        viewHolder.itemView.tv_temp_max.text = weather7Day.max_temp.toString()
-        viewHolder.itemView.tv_temp_min.text = weather7Day.min_temp.toString()
+        viewHolder.tvDay.text = weather7Day.valid_date
+        viewHolder.itemView.tvStatus.text = weather7Day.weather.description
+        viewHolder.itemView.tvTempMax.text = weather7Day.max_temp.toString()
+        viewHolder.itemView.tvTempMin.text = weather7Day.min_temp.toString()
         viewHolder.imageWeather.setImageResource(R.drawable.cloud)
     }
     override fun getItemCount() = dataSet.size

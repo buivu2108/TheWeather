@@ -12,10 +12,10 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.TheWeather">
         <activity
-            android:name=".MainActivity2"
+            android:name=".FutureWeather"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CurrentWeather"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

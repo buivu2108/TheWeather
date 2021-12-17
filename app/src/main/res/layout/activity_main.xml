@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#00BCD4"
-    tools:context=".MainActivity">
+    tools:context=".CurrentWeather">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/edt_search"
+            android:id="@+id/edtSearch"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
@@ -25,7 +25,7 @@
             android:paddingLeft="2dp" />
 
         <Button
-            android:id="@+id/btn_search"
+            android:id="@+id/btnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_name_city"
+        android:id="@+id/tvNameCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -42,7 +42,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/tv_name_address"
+        android:id="@+id/tvNameAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -51,14 +51,14 @@
         android:textSize="24sp" />
 
     <ImageView
-        android:id="@+id/img_trang_thai"
+        android:id="@+id/imgStatus"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/tv_nhiet_do"
+        android:id="@+id/tvTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -68,7 +68,7 @@
         android:textSize="32sp" />
 
     <TextView
-        android:id="@+id/tv_trang_thai"
+        android:id="@+id/tvStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -90,13 +90,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/img_do_am"
+                android:id="@+id/imgHumidity"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:src="@drawable/humidity" />
 
             <TextView
-                android:id="@+id/tv_do_am"
+                android:id="@+id/tvHumidity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Độ ẩm"
@@ -109,13 +109,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/img_may"
+                android:id="@+id/imgCloud"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:src="@drawable/cloud" />
 
             <TextView
-                android:id="@+id/tv_may"
+                android:id="@+id/tvCloud"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mây"
@@ -128,13 +128,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/img_gio"
+                android:id="@+id/imgWind"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:src="@drawable/wind" />
 
             <TextView
-                android:id="@+id/tv_gio"
+                android:id="@+id/tvWind"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gió"
@@ -145,7 +145,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_date"
+        android:id="@+id/tvDateUpdate"
         android:layout_width="match_parent"
         android:textSize="20sp"
         android:layout_marginTop="16dp"
@@ -154,7 +154,7 @@
         android:text="Ngày Cập Nhật" />
 
     <Button
-        android:id="@+id/btn_ngay_tiep_theo"
+        android:id="@+id/btnNextDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
